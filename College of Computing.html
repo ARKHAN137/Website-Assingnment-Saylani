@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <link rel="stylesheet" href="css/nav.css" type="text/css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
+        <title> College of Computing</title>
+
+        <link rel="shortcut icon" href="logo_icon.ico" type="image/x-icon">
+        <link rel="icon" href="logo_icon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  
+<div class="logo"> <img  src="Home\logo.jpg" alt="Uni Info logo"/> </div>
+
+    <div id="NAV">
+
+          <ul>
+            <li><a href="Uni Info.html" >Home</a></li>
+            <li>Departments
+              <ul>
+                <li id="CS">Computer Science
+                  <ul>
+                    <li><a href="PAF KIET.html">Paf Kiet</a></li>
+                    <li><a href="FAST NU.html">Fast NUCES</a></li>
+                    <li><a href="BAHRIA.html">Bahria University</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li>Engineering
+                  <ul>
+                    <li><a href="NED.html">NED</a></li>
+                    <li><a href="NUST.html">NUST</a></li>
+                    <li><a href="GIKI.html">GIKI</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li>Management Sciences
+                  <ul>
+                    <li><a href="IBA.html">IBA</a></li>
+                    <li><a href="LUMS.html">LUMS</a></li>
+                    <li><a href="SZABIST.html">SZABIST</a></li>
+                  </ul>
+                </li>
+              </ul>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+          </ul>
+        
+      </div>
+
+
+
+          
+
+<div class="main" style="height: 1000px;">
+
+<center>
+  
+  <div class="bannerDiv" style="height: 1000px;">
+
+      <div class="CLS">
+
+        <img src="ComputerScience\paf\main_logo.jpg" alt="PAF"/> 
+        <a href="Paf Kiet.html" target="#" style="text-decoration:none;"> <h2> Pakistan Air Force - Karachi Institute Of Economics And Technology </h2> </a>  
+        <br />
+
+        <img src="ComputerScience\fast\fast_logo.png" alt="FAST"/>
+        <a href="FAST NU.html" target="#"> <h2>National University of Computer and Emerging Sciences </h2>  </a>
+        <br />
+
+        <img src="ComputerScience\bahria\bahria_logo.jpg" alt="BAHRIA"/>
+        <a href="BAHRIA.html" target="#"> <h2>  Bahria University </h2> </a>
+        
+
+       
+      </div>
+
+    
+      
+    
+  </div>
+
+</center>
+
+
+
+
+</div>
+
+<div>
+
+  <footer id="footer">
+          
+      <center> 
+          <div class="social" > 
+              <a class="fa fa-facebook" href="https://www.facebook.com/University-Information-1700305663375328" target="#" style="background-color: #3B5998;"> </a>
+              <a class="fa fa-google-plus" style="background-color: #d34836;"> </a>
+              <a class="fa fa-twitter" style="background-color: #00aced;"> </a>
+
+          <div> 
+       </center>
+
+      <ul id="contactInfo">
+        <li> <i class="fa fa-phone-square"> </i> +9221-111-000-638 (NET) </li>
+        <li> <i class="fa fa-envelope-o"></i> query@uninfo.net.pk </li>
+      </ul>
+    
+         <p> &copy; 2017 Uni Info.  All Rights Reserved  </p>
+        
+          
+      
+  </footer>
+    
+  </footer>
+
+
+</div>
+
+<script>
+        var images = ["paf1.jpg","paf2.jpg","paf3.jpg"];
+        
+        var i = 0;
+        
+        var sliderIndicators = document.getElementsByClassName("slider-indicators");
+        
+
+        var renew = setInterval(function(){
+            if(images.length == i){
+                i = 0;
+            }
+            else {
+            document.getElementById("banner").src = images[i];
+            
+            setInterval(function bogus(){sliderIndicators[0].children[i].checked = true;},0);
+
+            sliderIndicators[0].children[i].checked = false;
+            
+            
+            ++i;
+
+        }
+        },1000);
+
+
+
+        
+        
+
+</script>
+
+
+
+
+</body>
+</html>

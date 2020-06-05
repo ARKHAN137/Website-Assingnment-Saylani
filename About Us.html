@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <link rel="stylesheet" href="css/nav.css" type="text/css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
+        <title> About Us </title>
+
+        <link rel="shortcut icon" href="logo_icon.ico" type="image/x-icon">
+        <link rel="icon" href="logo_icon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  
+<div class="logo"> <img  src="Home\logo.jpg" alt="Uni Info logo"/> </div>
+
+    <div id="NAV">
+
+          <ul>
+            <li><a href="Uni Info.html" >Home</a></li>
+            <li>Departments
+              <ul>
+                <li id="CS">Computer Science
+                  <ul>
+                    <li><a href="PAF KIET.html">Paf Kiet</a></li>
+                    <li><a href="FAST NU.html">Fast NUCES</a></li>
+                    <li><a href="BAHRIA.html">Bahria University</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li>Engineering
+                  <ul>
+                    <li><a href="NED.html">NED</a></li>
+                    <li><a href="NUST.html">NUST</a></li>
+                    <li><a href="GIKI.html">GIKI</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li>Management Sciences
+                  <ul>
+                    <li><a href="IBA.html">IBA</a></li>
+                    <li><a href="LUMS.html">LUMS</a></li>
+                    <li><a href="SZABIST.html">SZABIST</a></li>
+                  </ul>
+                </li>
+              </ul>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+          </ul>
+        
+      </div>
+
+
+
+          
+
+<div class="main">
+
+<center>
+  
+  <div class="bannerDiv">
+
+    <p class="bigP"> What we do? </p>
+
+    <p id="AboutUs">
+    We welcome all the visitors to Uni Info. This website is meant to help students and all other users who need education related information. We intend to provide the most accurate information to our visitors and make every best effort to ensure it. As most of the information is collected from other sources like newspaper and web , WE DONT TAKE ANY RESPONSIBILITY for the authenticity of any piece of information on our website. The information on Uni Info can not be taken as final reference. The visitors must verify any piece of information before involving in any activity with respect to the provided information. </p>
+    
+    
+  </div>
+
+</center>
+
+
+
+
+</div>
+
+<div>
+
+<footer id="footer">
+          
+      <center> 
+          <div class="social" > 
+              <a class="fa fa-facebook" href="https://www.facebook.com/University-Information-1700305663375328" target="#" style="background-color: #3B5998;"> </a>
+              <a class="fa fa-google-plus" style="background-color: #d34836;"> </a>
+              <a class="fa fa-twitter" style="background-color: #00aced;"> </a>
+
+          <div> 
+       </center>
+
+      <ul id="contactInfo">
+        <li> <i class="fa fa-phone-square"> </i> +9221-111-000-638 (NET) </li>
+        <li> <i class="fa fa-envelope-o"></i> query@uninfo.net.pk </li>
+      </ul>
+    
+         <p> &copy; 2017 Uni Info.  All Rights Reserved  </p>
+        
+          
+      
+</footer>
+
+</div>
+
+<script>
+        var images = ["paf1.jpg","paf2.jpg","paf3.jpg"];
+        
+        var i = 0;
+        
+        var sliderIndicators = document.getElementsByClassName("slider-indicators");
+        
+
+        var renew = setInterval(function(){
+            if(images.length == i){
+                i = 0;
+            }
+            else {
+            document.getElementById("banner").src = images[i];
+            
+            setInterval(function bogus(){sliderIndicators[0].children[i].checked = true;},0);
+
+            sliderIndicators[0].children[i].checked = false;
+            
+            
+            ++i;
+
+        }
+        },1000);
+
+
+
+        
+        
+
+</script>
+
+
+
+
+</body>
+</html>
